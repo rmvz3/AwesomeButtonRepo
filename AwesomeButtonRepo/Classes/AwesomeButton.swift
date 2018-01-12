@@ -2,15 +2,15 @@
 
 import UIKit
 
-class AwesomeButton: UIButton {
+public class AwesomeButton: UIButton {
     
     var defaultFrameButon = CGRect(x:20, y:20, width: 100, height: 40)
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
-    init(title: String = "DEFAULT AWESOME BUTTON", cornerRadius : CGFloat = 5, borderColor: UIColor = UIColor.black, backgroundColor: UIColor = UIColor.orange, textColor: UIColor = UIColor.black) {
+    public init(title: String = "DEFAULT AWESOME BUTTON", cornerRadius : CGFloat = 5, borderColor: UIColor = UIColor.black, backgroundColor: UIColor = UIColor.orange, textColor: UIColor = UIColor.black) {
         super.init(frame: self.defaultFrameButon)
         
         self.layer.cornerRadius = cornerRadius
@@ -25,7 +25,7 @@ class AwesomeButton: UIButton {
         self.sizeToFit()
     }
     
-    convenience init(withTitle titleText: String, cornerRadius: CGFloat, borderColor: UIColor, backgroundColor: UIColor, andTextColor textColor: UIColor ) {
+    convenience public init(withTitle titleText: String, cornerRadius: CGFloat, borderColor: UIColor, backgroundColor: UIColor, andTextColor textColor: UIColor ) {
         self.init(title: titleText, cornerRadius: cornerRadius, borderColor: borderColor, backgroundColor: backgroundColor, textColor: textColor)
     }
 }
