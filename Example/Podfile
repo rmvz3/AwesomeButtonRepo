@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AwesomeButtonRepo_Example' do
+  pod 'AwesomeButtonRepo', :path => '../'
+
+  target 'AwesomeButtonRepo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
